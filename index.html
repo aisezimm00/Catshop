@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="aside">
+      <form></form>
+
+      <br />
+      <br />
+      <input type="text" id="search" placeholder="Search" />
+      <div class="sortPrice2">
+        <button onclick="searchItems()" class="button" id="searchButton">search</button>
+        <button class="button" onclick="clearFilter()">clear filter</button>
+      </div>
+
+      <br />
+      <br />
+      <div class="sortPrice2">
+        <input id="priceInput1" type="text" placeholder="min" />
+        <br />
+        <br />
+        <input id="priceInput2" type="text" placeholder="max" />
+      </div>
+      <button class="button" onclick="sortByPrice()">sort</button>
+      <br />
+      <br />
+
+      <br /><br />
+      <h1>cart:</h1>
+
+      <div id="modal" class="modal-window"></div>
+
+      <div id="cart"></div>
+    </div>
+    <div id="container"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
